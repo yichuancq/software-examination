@@ -4,7 +4,6 @@
 //
 //  Created by yichuan on 2022/4/19.
 //
-
 //c99 导入bool 头文件
 #include "stdbool.h"
 // switch 函数
@@ -21,8 +20,8 @@ bool function_while(int i);
 int main(int argc, const char * argv[]) {
     printf("输入1-7\r\n");
     // insert code here...
-    bool flag=true;
-    while (flag) {
+    bool flag=false;
+    do{
         int i;
         printf("\r\n输入1-7，显示星期几：");
         scanf("%d",&i);
@@ -30,9 +29,7 @@ int main(int argc, const char * argv[]) {
         //function_switch(i);
         //while 函数
          flag= function_while(i);
-    }
-    
-    //
+    }while(flag);
     return 0;
 }
 /* switch 函数**/
