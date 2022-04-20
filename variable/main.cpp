@@ -9,10 +9,18 @@
 using namespace std;
 //函数申明
 int add(int a,int b);
+//面积计算
+int _area(int width,int len);
 // 变量声明
 extern int a, b;
 extern int c;
 extern float f;
+
+//常量定义 长度为10
+#define LENGTH 10
+//常量定义 宽度为5
+#define WIDTH  5
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     
@@ -33,9 +41,28 @@ int main(int argc, const char * argv[]) {
     cout << c << endl ;
     f = 70.0/3.0;
     cout << f << endl ;
+    int area;
+    //面积计算
+    area=WIDTH*LENGTH;
+    cout <<"area="<<area<<endl;
+    area=_area(WIDTH, LENGTH);
+    cout<<"_area"<<area<<endl;
+    //用const 关键字定义常量
+    const int  LENGTH2 = 10;
+    const int  WIDTH2  = 5;
+    const char NEWLINE = '\n';
+    
+    area = LENGTH2 * WIDTH2;
+    cout << area;
+    cout << NEWLINE;
     return 0;
 }
 /* 函数体**/
 int add(int a,int b){
     return a+b;
 }
+/*面积计算**/
+int _area(int a,int b){
+    return a*b;
+}
+
