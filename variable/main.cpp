@@ -11,6 +11,9 @@ using namespace std;
 int add(int a,int b);
 //面积计算
 int _area(int width,int len);
+
+
+
 // 变量声明
 extern int a, b;
 extern int c;
@@ -55,6 +58,17 @@ int main(int argc, const char * argv[]) {
     area = LENGTH2 * WIDTH2;
     cout << area;
     cout << NEWLINE;
+    // insert code here..
+//    const int a=10;
+//    const int b=20;
+    cout << "交换前，a 的值：" << a << endl;
+    cout << "交换前，b 的值：" << b << endl;
+    /* 调用函数来交换值
+     * &a 表示指向 a 的指针，即变量 a 的地址
+     * &b 表示指向 b 的指针，即变量 b 的地址
+     */
+    cout << "交换后，a 的值：" << a << endl;
+    cout << "交换后，b 的值：" << b << endl;
     return 0;
 }
 /* 函数体**/
