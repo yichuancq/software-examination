@@ -8,8 +8,9 @@
 
 
 #include "/Users/yichuan/Documents/software examination/product/product.h"
-#include <stdio.h>
+#include <stdlib.h>
 //导入这个，名称赋值
+#include <stdio.h>
 #include <string.h>
 //显示商品信息
 void showProduct(struct Product *p);
@@ -41,7 +42,8 @@ struct products *createProduct(){
     //products[SIZE];
     for(int i=0;i<SIZE;i++){
         //"大米"+(char)i
-        strcpy(products[i].brand,"小米");
+        //printf("%s ",c);
+        strcpy(products[i].brand,"大米");
         strcpy(products[i].name,"手机");
         products[i].price=(1000.00+i);
     }
