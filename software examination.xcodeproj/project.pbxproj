@@ -23,6 +23,7 @@
 		90B5F66B2810657C0028BFC1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90B5F66A2810657C0028BFC1 /* main.cpp */; };
 		90B5F690281070240028BFC1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90B5F68F281070240028BFC1 /* main.cpp */; };
 		90B5F6AB2810E59F0028BFC1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 90B5F6AA2810E59F0028BFC1 /* main.c */; };
+		90B5F6B12810EF480028BFC1 /* randgame.c in Sources */ = {isa = PBXBuildFile; fileRef = 90B5F6B02810EF480028BFC1 /* randgame.c */; };
 		90D7B3CB280EA80E00CE97C3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D7B3CA280EA80E00CE97C3 /* main.c */; };
 		90D7B3D1280EA83200CE97C3 /* arrays.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D7B3D0280EA83200CE97C3 /* arrays.c */; };
 		90D7B3D9280EF12300CE97C3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D7B3D8280EF12300CE97C3 /* main.c */; };
@@ -225,6 +226,8 @@
 		90B5F6A32810E4F50028BFC1 /* swapelement */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = swapelement; path = "/Users/yichuan/Documents/software examination/build/Debug/swapelement"; sourceTree = "<absolute>"; };
 		90B5F6A82810E59F0028BFC1 /* randnumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = randnumber; path = "/Users/yichuan/Documents/software examination/build/Debug/randnumber"; sourceTree = "<absolute>"; };
 		90B5F6AA2810E59F0028BFC1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		90B5F6AF2810EF480028BFC1 /* randgame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = randgame.h; sourceTree = "<group>"; };
+		90B5F6B02810EF480028BFC1 /* randgame.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = randgame.c; sourceTree = "<group>"; };
 		90D7B3CA280EA80E00CE97C3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		90D7B3CF280EA83200CE97C3 /* arrays.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arrays.h; sourceTree = "<group>"; };
 		90D7B3D0280EA83200CE97C3 /* arrays.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arrays.c; sourceTree = "<group>"; };
@@ -495,6 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				90B5F6AA2810E59F0028BFC1 /* main.c */,
+				90B5F6AF2810EF480028BFC1 /* randgame.h */,
+				90B5F6B02810EF480028BFC1 /* randgame.c */,
 			);
 			path = randnumber;
 			sourceTree = "<group>";
@@ -1025,6 +1030,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B5F6B12810EF480028BFC1 /* randgame.c in Sources */,
 				90B5F6AB2810E59F0028BFC1 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
