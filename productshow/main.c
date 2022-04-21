@@ -31,7 +31,6 @@ void showProduct(struct Product *p){
         printf("\r\n手机品牌:%s,\t名称:%s, \t价格:%1f",(*(p+i)).brand,(*(p+i)).name,(*(p+i)).price);
     }
     printf("\r\n");
-    
 }
 ///
 struct products *createProduct(){
@@ -43,7 +42,11 @@ struct products *createProduct(){
     for(int i=0;i<SIZE;i++){
         //"大米"+(char)i
         //printf("%s ",c);
-        strcpy(products[i].brand,"大米");
+        //数值格式化
+        char brand[255]={""};
+        //格式化显示
+        snprintf(brand,sizeof(brand),"大米%2d",i+1);
+        strcat(products[i].brand,brand);
         strcpy(products[i].name,"手机");
         products[i].price=(1000.00+i);
     }

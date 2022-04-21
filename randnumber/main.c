@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
             /* 连接 str1 和 str2 */
             printf("\t%d",*(redNumber + i));
             char red[255];
-            //数值转换字符串
+            //数值格式化
             snprintf(red,255,"%4d",*(redNumber + i));
             //红球拼接
             strcat(line,red);
