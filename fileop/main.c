@@ -6,6 +6,7 @@
 //
 
 #include <stdio.h>
+# include <stdlib. h>
 // 写文件
 void writefile(void);
 // 读文件
