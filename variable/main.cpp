@@ -11,14 +11,10 @@ using namespace std;
 int add(int a,int b);
 //面积计算
 int _area(int width,int len);
-
-
-
 // 变量声明
 extern int a, b;
 extern int c;
 extern float f;
-
 //常量定义 长度为10
 #define LENGTH 10
 //常量定义 宽度为5
